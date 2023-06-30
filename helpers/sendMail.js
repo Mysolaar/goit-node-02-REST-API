@@ -12,12 +12,6 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// const sendMail = async (data) => {
-//   const mail = { ...data, from: SMTP_USER };
-//   await transporter.sendMail(mail);
-//   return true;
-// };
-
 const sendMail = async (data) => {
   const mailOptions = {
     from: SMTP_USER,
